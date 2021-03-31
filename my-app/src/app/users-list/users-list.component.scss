@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+.container__users{
+    width: 80%;
+    margin: auto;
+    background-color: #c6c6c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    .title {
+        width: 100%;
+        background: white;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        font-size: 0.5em;
+        text-transform: uppercase;
+        font-family: 'Poppins';
+        letter-spacing: 0.5em;
+        color: #111452;
+    }    
+    .users{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        background: transparent;
+        //background: linear-gradient(90deg, rgba(198,198,198,1) 5%, rgba(237,237,237,1) 92%);
+        font-family: 'Poppins', sans-serif;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            background: white;
+            border-radius: 5px;
+            padding: 5px 0;
+            box-shadow: 0px 5px 10px 0 #c6c6c6, 0 -5px 10px 0 #c6c6c6;
+            text-decoration: none;
+            &:visited{
+                text-decoration: none;
+            }
+            .pic-name{
+                display: flex;
+                justify-content: space-around;
+                width: 80%;
+                background: white;
+                align-items: center;
+                div:first-child{
+                    background: transparent;
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+                .name{
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    margin-left: 10%;
+                    h3{
+                        margin: 0;
+                        color: #111452;
+                        font-size: 1em;
+                    }
+                }
+                .logo{
+                    width: 10%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            span{
+                width: 100%;
+                font-size: 0.8em;
+                font-style: italic;
+                color: darksalmon;
+                text-align: center;
+            }
+        }
+    }
+}

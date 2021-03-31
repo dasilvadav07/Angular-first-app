@@ -1,0 +1,28 @@
+<div class="container__details">
+
+    <div class="user__detail">
+        <h2>User Details</h2>
+    </div>
+
+    <div class="container__info">
+        <div *ngIf="user">
+            <span>Gender : {{user.gender}}</span>
+            <span>Title : {{user.name.title}}</span>
+            <span>First-name : {{user.name.first}}</span>
+            <span>Last-name : {{user.name.last}}</span>
+            <span>Nb-street : {{user.location.street.number}}</span>
+            <span>Street-name : {{user.location.street.name}}</span>
+            <span>City : {{user.location.city}}</span>
+            <span>State : {{user.location.state}}</span>
+            <span>Country : {{user.location.country}}</span>
+            <span>Postcode : {{user.location.postcode}}</span>
+            <span>Email : {{user.email}}</span>
+            <span>Username : {{user.login.username}}</span>
+            <span>Age : {{user.dob.age}}</span>
+            <span>Registered-date : {{user.registered.date | date : "shortDate"}}</span>
+            <span>Phone : {{user.phone}}</span>
+          
+          </div>
+          <a [routerLink]="['/']">Back to home page</a>
+    </div>
+</div>
